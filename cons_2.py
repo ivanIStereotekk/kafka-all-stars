@@ -3,11 +3,10 @@ import json
 
 
 KAFKA_SERVER = 'localhost:29092'
-TOPIC_ID = 'my_super_topic'
-USER = "Ivan"
+TOPIC_TWO = 'my_favorit_topic'
 
 
-consumer = KafkaConsumer(TOPIC_ID, bootstrap_servers=KAFKA_SERVER)
+consumer = KafkaConsumer(TOPIC_TWO, bootstrap_servers=KAFKA_SERVER)
 
 
 print("Bootsraped", KAFKA_SERVER)
