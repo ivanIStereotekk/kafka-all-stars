@@ -28,6 +28,3 @@ for i in range(10):
     producer.send(TOPIC_TWO, json.dumps(body).encode("utf-8"))
     print("Message sent:", i, TOPIC_TWO)
     time.sleep(1)
-
-
-# docker run -d --name kafka-container -e TZ=UTC -p 29092:29092 -e ZOOKEEPER_HOST=host.docker.internal ubuntu/kafka:3.1-22.04_beta
