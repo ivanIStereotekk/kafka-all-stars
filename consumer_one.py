@@ -8,14 +8,12 @@ USER = os.getenv('USER')
 
 KAFKA_SERVER = 'localhost:29092'
 TOPIC_ONE = 'Topic_One'
-
-
 consumer = KafkaConsumer(TOPIC_ONE, bootstrap_servers=KAFKA_SERVER)
-
-
 print("Bootsraped", KAFKA_SERVER)
 
 
+
+# Ждет сообщения из топика - 1
 while True:
     for message in consumer:
         print("Incoming message")
