@@ -1,5 +1,9 @@
 from kafka import KafkaConsumer
 import json
+import os
+
+
+USER = os.getenv('USER')
 
 
 KAFKA_SERVER = 'localhost:29092'

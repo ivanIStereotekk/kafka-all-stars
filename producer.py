@@ -2,9 +2,12 @@ from kafka import KafkaProducer
 import time
 import json
 from datetime import datetime
+import os
 
+
+USER = os.getenv('USER')
 TIMESTAMP = datetime.now()
-USER = "Ivan"
+
 
 KAFKA_SERVER = 'localhost:29092'
 TOPIC_ID = 'my_super_topic'

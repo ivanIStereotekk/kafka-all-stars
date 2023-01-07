@@ -1,10 +1,13 @@
 from kafka import KafkaConsumer
 import json
+import os
+
+
+USER = os.getenv('USER')
 
 
 KAFKA_SERVER = 'localhost:29092'
 TOPIC_ID = 'my_super_topic'
-USER = "Ivan"
 
 
 consumer = KafkaConsumer(TOPIC_ID, bootstrap_servers=KAFKA_SERVER)
